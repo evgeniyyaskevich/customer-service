@@ -23,12 +23,12 @@ It provides the customer API to perform different operations on customer entity.
 ## Roadmap
 
 
-- [ ] Setup spring boot application with health check
+- [x] Setup spring boot application with health check
 - [ ] Implement GET customer
-    - [ ] Connect service to datastore
+    - [x] Connect service to datastore
     - [ ] Setup controller for customer GET
 - [ ] Implement CREATE customer
-  - [ ] Define the customer model
+  - [x] Define the customer model
   - [ ] Setup backend validation
   - [ ] Setup a creation endpoint
 - [ ] Implement LIST customer
