@@ -1,5 +1,6 @@
 package lucidworks.exercise.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import lombok.RequiredArgsConstructor;
@@ -19,5 +20,9 @@ public class CustomerService {
 
   public Customer create(Customer customer) {
     return customerRepository.insert(customer);
+  }
+
+  public void delete(String customerId) {
+    customerRepository.deleteById(customerId);
   }
 }

@@ -20,3 +20,9 @@ find-by-id:
 	read -p "Customer id: " customerId; \
 	curl -v \
 	${CUSTOMER_API}/v1/customer/$$(echo $$customerId)
+
+delete-by-id:
+	read -p "Customer id: " customerId; \
+	curl -v \
+	-X DELETE \
+	${CUSTOMER_API}/v1/customer/$$(echo $$customerId)
