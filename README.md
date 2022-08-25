@@ -5,41 +5,53 @@ It provides the customer API to perform different operations on customer entity.
 
 ## Getting Started
 
-- [ ] any general getting started info?
+The service is a quite simple spring boot application. It stores the customer data and provides the API
+to work with customer entities.
+
+The service stores the data in embedded MongoDB. So, no need in any external dependencies for now.
+
+Please see the _Road Map_ section for further development plans.
 
 ### Prerequisites
 
 * Java 11+
-* Maven
+* [Maven](https://maven.apache.org/)
+* [curl](https://curl.se/)
+* [Make](https://makefiletutorial.com/)
 
-### Installation
+### Installation & Usage
 
-- [ ] Put the installation instructions here
+Run to start the application: `make start`
 
-## Usage
+Run to create a sample customer: `make create`
 
-- [ ] Describe the test scripts usage
+Run to retrieve a customer by id: `make find-by-id`
+
+Run to delete a customer by id: `make delete-by-id`
+
+Please also review the `Makefile` to find other useful commands for local development and testing.
 
 ## Roadmap
 
 
 - [x] Setup spring boot application with health check
-- [ ] Implement GET customer
+- [x] Implement GET customer
     - [x] Connect service to datastore
-    - [ ] Setup controller for customer GET
-- [ ] Implement CREATE customer
+    - [x] Setup controller for customer GET
+- [x] Implement CREATE customer
   - [x] Define the customer model
-  - [ ] Setup backend validation
-  - [ ] Setup a creation endpoint
+  - [x] Setup backend validation
+  - [x] Setup a creation endpoint
 - [ ] Implement LIST customer
   - [ ] Define the search criteria & paging model
   - [ ] Setup LIST endpoint
-- [ ] Implement DELETE customer endpoint
+- [x] Implement DELETE customer endpoint
 - [ ] Ensure unit & integration tests exists
 - [ ] Update README file
-  - [ ] Run service locally
+  - [x] Run service locally
   - [ ] Scaling (up & out)
-  - [ ] Test scripts
+  - [x] Test scripts
+- [ ] Setup Dockerfile with MongoDB dependency for the service.
 
 ## Maintainers
 
