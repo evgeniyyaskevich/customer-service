@@ -26,3 +26,7 @@ delete-by-id:
 	curl -v \
 	-X DELETE \
 	${CUSTOMER_API}/v1/customer/$$(echo $$customerId)
+
+find:
+	curl -v \
+	'${CUSTOMER_API}/v1/customer?page=1&size=50'

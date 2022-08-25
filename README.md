@@ -44,7 +44,7 @@ Please also review the `Makefile` to find other useful commands for local develo
   - [x] Setup a creation endpoint
 - [ ] Implement LIST customer
   - [ ] Define the search criteria & paging model
-  - [ ] Setup LIST endpoint
+  - [x] Setup LIST endpoint
 - [x] Implement DELETE customer endpoint
 - [ ] Ensure unit & integration tests exists
 - [ ] Update README file
@@ -52,6 +52,7 @@ Please also review the `Makefile` to find other useful commands for local develo
   - [ ] Scaling (up & out)
   - [x] Test scripts
 - [ ] Setup Dockerfile with MongoDB dependency for the service.
+- [ ] Setup swagger documentation for the customer controller
 
 ## Maintainers
 
