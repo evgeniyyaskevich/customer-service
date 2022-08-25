@@ -34,6 +34,7 @@ public class CustomerController {
   }
 
   @PostMapping
+  @ResponseStatus(HttpStatus.CREATED)
   public Customer create(@Valid @RequestBody Customer customer) {
     return customerService.create(customer);
   }
